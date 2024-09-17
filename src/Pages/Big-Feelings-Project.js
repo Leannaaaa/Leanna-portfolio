@@ -1,37 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function BigFeelingsProject() {
+  const navigate = useNavigate();
+
+  const [displayedTextLine1, setDisplayedTextLine1] = useState("");
+  const [showCursorLine1, setShowCursorLine1] = useState(true);
+
+  const textLine1 = "Big Feelings Project";
+
+  useEffect(() => {
+    let index1 = 0;
+    const interval1 = setInterval(() => {
+      setDisplayedTextLine1(textLine1.slice(0, index1 + 1));
+      index1++;
+      if (index1 === textLine1.length) {
+        clearInterval(interval1);
+        setShowCursorLine1(false);
+      }
+    }, 100);
+
+    return () => {
+      clearInterval(interval1);
+    };
+  }, []);
+
+  const goBackToPrevious = () => {
+    navigate("/projects");
+  };
+
   return (
     <div className="big-feelings-page">
-      <h1>Big Feelings Project</h1>
-      <p>
-        The "Big Feelings" web application is designed to help children aged six to twelve understand and manage their emotions. The app includes a variety of features, such as:
-      </p>
-      <ul>
-        <li><strong>Mood Tracker:</strong> Allows children to log and track their emotions over time.</li>
-        <li><strong>Journaling:</strong> Provides a secure space for children to express their thoughts and feelings.</li>
-        <li><strong>Library:</strong> Offers educational resources to help children understand their emotions.</li>
-        <li><strong>Mini-Games:</strong> Engages children in interactive games that teach emotional awareness.</li>
-        <li><strong>Mental Health Activities:</strong> Includes activities designed to help children manage stress.</li>
-      </ul>
-      <p>
-        The application is designed with accessibility in mind, featuring black and white themes to reduce visual strain and different fonts to cater to children with ADHD and dyslexia.
-      </p>
-      <p>
-        <strong>Links:</strong>
-      </p>
-      <ul>
-        <li>
-          <a href="https://youtu.be/j7784hn_n1U" target="_blank" rel="noopener noreferrer">
-            Watch the Walkthrough Video
-          </a>
-        </li>
-        <li>
-          <a href="https://big-feelings-project-1234.web.app/" target="_blank" rel="noopener noreferrer">
-            Visit the Big Feelings Web Application
-          </a>
-        </li>
-      </ul>
+      <button className="back-button" onClick={goBackToPrevious}>
+        Back
+      </button>
+
+      <div className="projects-header">
+        <h1>
+          {displayedTextLine1}
+          {showCursorLine1 && <span className="cursor">|</span>}
+        </h1>
+      </div>
+
+      {/* Embedded website */}
+      <div className="monitors-section">
+        <iframe
+          src="https://big-feelings-project-1234.web.app/"
+          title="Project Website"
+          className="project-iframe"
+        />
+      </div>
     </div>
   );
 }
