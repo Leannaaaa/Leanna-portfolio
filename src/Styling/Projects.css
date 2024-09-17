@@ -108,15 +108,3 @@
 }
 
 
-.monitors-section {
-  display: flex;
-  gap: 0px; 
-  justify-content: center; 
-  margin-top: 250px; 
-  margin-bottom: 40px; 
-}
-
-.monitor-image {
-  width: 500px; /* Adjust the size as needed */
-  height: auto;
-}
