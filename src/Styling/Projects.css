@@ -1,0 +1,108 @@
+/* Styling for Projects Page */
+.projects-page {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  min-height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+/* Styling for Projects Header */
+.projects-header {
+  margin-top: 0; 
+  padding-top: 20px; 
+  text-align: center;
+}
+
+.projects-header h1 {
+  font-size: 2rem; 
+  font-weight: normal !important; /* Override the browser's bold default */
+  color: #ffffff; 
+  margin: 0; 
+}
+
+/* Blinking Cursor Effect */
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  background-color: black;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: black;
+  }
+}
+
+/* Styling for Back Button */
+.back-button {
+  padding: 15px 30px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none; 
+  cursor: pointer; 
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.projects-header {
+  padding-top: 20px; 
+  text-align: center; 
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin-top: 80px; 
+  padding-left: 20px;
+  position: absolute;
+  top: 80px; 
+  left: 100px; 
+}
+
+/* Styling for the Project Box */
+.project-box {
+  width: 300px; 
+  height: 200px;
+  padding: 20px; 
+  background-color: #2E2E2E; 
+  color: white; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s; 
+  margin-bottom: 10px; 
+}
+
+.project-box:hover {
+  background-color: black; 
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  background-color: black;
+  animation: blink 1s step-end infinite;
+}
+
+.project-description {
+  font-size: 0.9em; 
+  color: #ffffff; 
+  margin-top: 20px; 
+}
+
+.project-description2 {
+  font-size: 0.9em; 
+  color: #ffffff; 
+  margin-top: 25px; 
+}

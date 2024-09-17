@@ -1,0 +1,25 @@
+.big-feelings-page {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #282c34;
+  }
+  
+  .big-feelings-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .big-feelings-page ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .big-feelings-page a {
+    color: #1c6ca1;
+    text-decoration: underline;
+  }
+  
+  .big-feelings-page a:hover {
+    color: #ffffff;
+  }
+  
