@@ -4,7 +4,7 @@ import KeyboardImage from "../Images/Keyboard.png";
 import MouseImage from "../Images/mouse.png";
 import StreamDeckImage from "../Images/Streamdeck.png";
 
-function Home() {
+function DesktopHome() {
   const navigate = useNavigate(); 
 
   const [displayedTextLine1, setDisplayedTextLine1] = useState("");
@@ -252,4 +252,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default DesktopHome;

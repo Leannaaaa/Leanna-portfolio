@@ -1,0 +1,18 @@
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+    #mobile-home {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .mobile-section h1 {
+      font-size: 24px;
+    }
+  
+    .mobile-section p {
+      font-size: 16px;
+    }
+  }
+  
+
+  
