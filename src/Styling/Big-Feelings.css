@@ -41,13 +41,6 @@
   margin-bottom: 20px;
 }
 
-.monitors-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
 .project-iframe {
   width: 500px;
   height: 1000px; 
@@ -56,4 +49,15 @@
   border: 5px solid #2E2E2E; 
   border-radius: 15px; 
 }
+
+.column {
+  width:600px;
+  flex: 0 0 200px; 
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+  color: #ffffff;
+  font-size: 18px;
+}
+
+
 

@@ -42,13 +42,27 @@ function BigFeelingsProject() {
         </h1>
       </div>
 
-      {/* Embedded website */}
-      <div className="monitors-section">
-        <iframe
-          src="https://big-feelings-project-1234.web.app/"
-          title="Project Website"
-          className="project-iframe"
-        />
+      {/* Main content area */}
+      <div className="content-container">
+        {/* Left column */}
+        <div className="column">
+          {/* Add content for the left column here */}
+          <p>
+            The Big Feelings project aimed to develop a web application that
+            allows children to learn, understand, and manage their emotions.
+            This project was undertaken as a solo initiative, utilising Agile
+            methodologies for both design and development.
+          </p>
+        </div>
+
+        {/* Embedded website */}
+        <div className="iframe-container">
+          <iframe
+            src="https://big-feelings-project-1234.web.app/"
+            title="Big Feelings Project - Interactive Web Application"
+            className="project-iframe"
+          />
+        </div>
       </div>
     </div>
   );

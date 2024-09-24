@@ -117,12 +117,6 @@
 }
 
 
-.overlay-circle-projects {
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-}
-
 /* Speech bubble styling */
 .speech-bubble {
   position: absolute;
@@ -144,8 +138,7 @@
 /* Overlay circle styles */
 .overlay-circle-hobbies,
 .overlay-circle-skills,
-.overlay-circle-goals,
-.overlay-circle-projects{
+.overlay-circle-goals{
   position: absolute;
   cursor: pointer;
   transform: translate(-50%, -50%);
@@ -159,8 +152,7 @@
 
 .overlay-circle-hobbies:hover .speech-bubble,
 .overlay-circle-skills:hover .speech-bubble,
-.overlay-circle-goals:hover .speech-bubble,
-.overlay-circle-projects:hover .speech-bubble {
+.overlay-circle-goals:hover .speech-bubble {
   visibility: visible; 
   opacity: 1; 
   z-index: 10;
@@ -168,8 +160,7 @@
 
 .overlay-circle-hobbies:hover,
 .overlay-circle-skills:hover,
-.overlay-circle-goals:hover,
-.overlay-circle-projects:hover {
+.overlay-circle-goals:hover{
   z-index: 5;
 }
 

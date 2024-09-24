@@ -5,7 +5,7 @@ import MouseImage from "../Images/mouse.png";
 import StreamDeckImage from "../Images/Streamdeck.png";
 
 function Home() {
-  const navigate = useNavigate(); // Now properly defined
+  const navigate = useNavigate(); 
 
   const [displayedTextLine1, setDisplayedTextLine1] = useState("");
   const [displayedTextLine2, setDisplayedTextLine2] = useState("");
@@ -245,13 +245,6 @@ function Home() {
           )}
           <div className="mouse-container">
             <img src={MouseImage} className="mouse-image" alt="Mouse" />
-
-            {/* Circle overlay on the mouse */}
-            <div
-              className="overlay-circle overlay-circle-projects"
-              onClick={() => handleBubbleClick("projects")}
-            >
-            </div>
           </div>
         </div>
       </div>
