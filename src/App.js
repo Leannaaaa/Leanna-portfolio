@@ -8,6 +8,7 @@ import './App.css';
 import './Styling/Setup.css';
 import './Styling/Projects.css';
 import './Styling/Big-Feelings.css';
+import './Styling/MobileHome.css';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);

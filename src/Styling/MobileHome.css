@@ -1,18 +1,82 @@
 /* Mobile-specific styles */
 @media screen and (max-width: 768px) {
-    #mobile-home {
-      padding: 20px;
-      text-align: center;
-    }
-  
-    .mobile-section h1 {
-      font-size: 24px;
-    }
-  
-    .mobile-section p {
-      font-size: 16px;
-    }
+  #mobile-home {
+    padding: 20px;
+    text-align: center;
   }
-  
 
-  
+  .mobile-section h1 {
+    font-size: 24px;
+  }
+
+  .mobile-section p {
+    font-size: 16px;
+  }
+}
+
+.mobile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Parent container for keyboard and mouse */
+.image-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 300px; /* Enforces minimum height */
+  position: relative;
+  background-color: rgb(68, 18, 46);
+  overflow: hidden;
+}
+.input-device-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  position: relative;
+  z-index: 2;
+}
+
+/* Keyboard Styling */
+.keyboard-container {
+  position: relative;
+  z-index: 3;
+  margin-right: 500px;
+}
+
+.keyboard-image {
+  width: 40%; 
+  height: auto;
+}
+
+/* Mouse Styling */
+.mouse-container {
+  width: 10%;
+  position: relative;
+  z-index: 3;
+  margin-left: 20px;
+}
+
+/* Table (StreamDeck) Styling */
+.table-container {
+  position: relative; 
+  top: 0;
+  left: 0;
+  width: 60vw; 
+  height: 50vh; 
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.table-image {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
